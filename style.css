@@ -1,0 +1,307 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: contents;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+.container{
+    
+    height: 100vh;
+    width: 100%;
+    background-image:url(images/background\ image.jpg) ;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.body{
+    display: initial;
+}
+.home .max-width{
+    width: 100%;
+    display: flex;
+  }
+.content{
+    height: 400px;
+    width: 960px;
+    background-color: rgba(0, 0, 0, 0.338);
+    font-style: italic;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo2 {
+    width: 160px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+     
+}
+.content p{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.functionalities{
+    display: flex;
+    font-display: center;
+    text-align: center;
+
+}
+.board{
+    display: grid;
+    height: 100vh;
+    font-display: center;
+}
+.piano-btn{
+    display: grid;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: thistle;
+    position: center;
+    font-size: large;
+}
+.Piano{
+    background-color: mediumslateblue; 
+    text-align: center; 
+   
+}
+.Pianologo{
+    position: initial;
+      
+}
+.AlarmClock{
+    background-color: mediumslateblue;
+    text-align: center;
+}
+.alarmclock-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: thistle;
+    position: center;
+    font-size: large;
+}
+.StopWatch{
+    background-color: mediumslateblue;
+    text-align: center;
+}
+.stopwatch-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: thistle;
+    position: center;
+    font-size: large
+}
+
+html {
+    height: 100%;
+  }
+  
+  .body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: initial;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 135, 240);
+  }
+  .maestro {
+    display: flex;
+    position: relative;
+    margin-left: 4px;
+  }
+  
+  .white-key {
+    width: 40px;
+    height: 120px;
+    background-color: #FFF;
+    border: 4px solid black;
+    border-radius: 0 0 6px 6px;
+    margin-left: -4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .white-key.active {
+    background-color: #C0C0C0;
+  }
+  
+  .black-key {
+    position: absolute;
+    width: 24px;
+    height: 80px;
+    background-image: linear-gradient(#000000, #303030);
+    border: 3px solid black;
+    border-radius: 0 0 2px 2px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .black-key.active {
+    background-image: linear-gradient(#000000, #101010);
+  }
+  
+  .Db4-key {
+    left: 22px;
+  }
+  
+  .Eb4-key {
+    left: 58px;
+  }
+  
+  .Gb4-key {
+    left: 130px;
+  }
+  
+  .Ab4-key {
+    left: 166px;
+  }
+  
+  .Bb4-key {
+    left: 202px;
+  }
+  
+  .Db5-key {
+    left: 274px;
+  }
+  
+  .Eb5-key {
+    left: 310px;
+  }
+
+    
+
+
+
+
+ /* (A) CONTAINER */
+#stopwatch {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* (B) TIME */
+#sw-time {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  background: rgb(12, 5, 5);
+  color: #fff;
+}
+
+/* (C) BUTTONS */
+#sw-rst, #sw-go {
+  box-sizing: border-box;
+  width: 50%;
+  cursor: pointer;
+  padding: 20px 0;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+}
+#sw-rst { background-color: #43d4df; }
+#sw-go { background-color: #eea2ee; }
+
+
+
+
+ 
+  
